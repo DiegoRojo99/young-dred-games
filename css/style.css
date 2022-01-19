@@ -58,6 +58,30 @@ h2 {
   }
 }
 
+.game-select {
+  display: flex;
+  justify-content: center;
+}
+
+.game-select .button {
+  width: 16.6875rem;
+  line-height: 3.4375rem;
+  border-radius: 4.8px;
+  background-color: #e16a40;
+  box-shadow: -5px 5px #92402a;
+  color: #fff;
+}
+
+.game-select .button:first-child {
+  margin-right: 1.625rem;
+}
+
+.game-select .button:active {
+  left: -5px;
+  top: 5px;
+  box-shadow: 0 0 #92402a;
+}
+
 .player-select {
   display: flex;
   justify-content: center;
@@ -89,6 +113,16 @@ h2 {
   }
 
   .player-select .button:first-child {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .game-select {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-select .button:first-child {
     margin-right: 0;
     margin-bottom: 1rem;
   }
