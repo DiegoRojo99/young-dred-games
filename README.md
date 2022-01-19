@@ -22,3 +22,9 @@ equal, then a tie is declared.
 The player that wins the majority of the three rounds will be the winner of the game.
 
 To demo all of this functionality, try out a final version of this project, located <a href="https://diegorojo99.github.io/young-dred-studios/rockPaperScissors.html" target="_blank">here</a>.
+
+## BeatMix
+
+This project is an application that can loop over a 16-step grid of four drum types and play them when they are activated. There is functionality to invert each row of drums, clear each row of drums, or clear the entire board. Also there is a functionality to retrieve and save presets to a server.
+
+To demo all of this functionality, try out a final version of this project, located <a href="https://diegorojo99.github.io/young-dred-studios/beatMix.html" target="_blank">here</a>.
