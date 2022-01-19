@@ -1,9 +1,10 @@
-# Rock Paper Scissors x99
+# Young Dred Studios
 
-## Project Overview
+This page will have all the websites and games created by me, so fell free to take a look to all my work on this page. Here are the projects I have developed so far:
 
-In this project, you will build all of the logic needed for a more intense version of
-Rock Paper Scissors (RPS). Rather than selecting just one of Rock, Paper, or Scissors - each player
+## Rock Paper Scissors x99
+
+This game is Rock Paper Scissors (RPS). Rather than selecting just one of Rock, Paper, or Scissors - each player
 will select three moves. Each move will consist of a type (Rock, Paper, or Scissors) as well
 as a strength value. Each player will have 99 total points to use as strength between all
 three of their moves. For example, an example set of moves might be:
@@ -20,4 +21,4 @@ equal, then a tie is declared.
 
 The player that wins the majority of the three rounds will be the winner of the game.
 
-To demo all of this functionality, try out a final version of this project, located <a href="https://diegorojo99.github.io/rock-paper-scissors/index.html" target="_blank">here</a>.
+To demo all of this functionality, try out a final version of this project, located <a href="https://diegorojo99.github.io/young-dred-studios/rockPaperScissors.html" target="_blank">here</a>.
