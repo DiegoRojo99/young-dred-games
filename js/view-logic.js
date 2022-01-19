@@ -7,13 +7,13 @@ const TIE = 'Tie';
 const VIEW_TRANSITION_TIME = 300;
 
 const $ROUND_SOUND = document.createElement('audio');
-$ROUND_SOUND.setAttribute('src', './audio/round.wav');
+$ROUND_SOUND.setAttribute('src', './audio/rps/round.wav');
 const $WIN_SOUND = document.createElement('audio');
-$WIN_SOUND.setAttribute('src', './audio/win.wav');
+$WIN_SOUND.setAttribute('src', './audio/rps/win.wav');
 const $MOVE_TYPE_SOUND = document.createElement('audio');
-$MOVE_TYPE_SOUND.setAttribute('src', './audio/move-type-select.wav');
+$MOVE_TYPE_SOUND.setAttribute('src', './audio/rps/move-type-select.wav');
 const $BUTTON_SOUND = document.createElement('audio');
-$BUTTON_SOUND.setAttribute('src', './audio/button-click.wav');
+$BUTTON_SOUND.setAttribute('src', './audio/rps/button-click.wav');
 
 let playerMode, currentPlayer;
 
@@ -80,10 +80,10 @@ function playGame(roundNumber) {
   }
   const $playerOneMove = $('#round .move').first();
   const $playerTwoMove = $('#round .move').last();
-  $playerOneMove.find('.icon').attr('src', `./img/${playerOneMove.type}.svg`);
+  $playerOneMove.find('.icon').attr('src', `./img/rps/${playerOneMove.type}.svg`);
   $playerOneMove.find('.name').text(playerOneMove.type);
   $playerOneMove.find('.attack').text(playerOneMove.value + ' Attack Points');
-  $playerTwoMove.find('.icon').attr('src', `./img/${playerTwoMove.type}.svg`);
+  $playerTwoMove.find('.icon').attr('src', `./img/rps/${playerTwoMove.type}.svg`);
   $playerTwoMove.find('.name').text(playerTwoMove.type);
   $playerTwoMove.find('.attack').text(playerTwoMove.value+ ' Attack Points');
   $('#round .winner .text').text(roundWinnerText);
@@ -125,13 +125,13 @@ function resetMoves(player) {
   }
 
   $('#move-one-type').data('type', 'rock');
-  $('#move-one-type .icon').attr('src', './img/rock.svg');
+  $('#move-one-type .icon').attr('src', './img/rps/rock.svg');
   $('#move-one-type .name').text('rock');
   $('#move-two-type').data('type', 'paper');
-  $('#move-two-type .icon').attr('src', './img/paper.svg');
+  $('#move-two-type .icon').attr('src', './img/rps/paper.svg');
   $('#move-two-type .name').text('paper');
   $('#move-three-type').data('type', 'scissors');
-  $('#move-three-type .icon').attr('src', './img/scissors.svg');
+  $('#move-three-type .icon').attr('src', './img/rps/scissors.svg');
   $('#move-three-type .name').text('scissors');
   $('#move-one-value').val(1);
   $('#move-two-value').val(1);
@@ -150,7 +150,7 @@ function changeMoveType($typeElement, direction) {
   } else {
     newType = MOVE_TYPES[(MOVE_TYPES.indexOf(currentType) + 1) % 3];
   }
-  const newTypeSrc = `./img/${newType}.svg`;
+  const newTypeSrc = `./img/rps/${newType}.svg`;
   $currentTypeElement.find('.icon').attr('src', newTypeSrc);
   $currentTypeElement.data('type', newType);
   $currentTypeElement.find('.name').text(newType);
