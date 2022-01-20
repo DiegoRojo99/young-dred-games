@@ -449,3 +449,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.icon{
+  width: 220px;
+  height: 185px;
+}
